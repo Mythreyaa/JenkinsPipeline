@@ -10,7 +10,7 @@ pipeline {
     stage('hello') {
       steps {
 	echo 'Stage Hello'
-        sh 'python HelloWorld.py'
+        sh 'bash -c "python HelloWorld.py"'
       }
     }
   }
