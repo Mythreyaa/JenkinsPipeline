@@ -4,12 +4,12 @@ pipeline {
     stage('version') {
       steps {
 	echo 'Stage Versions'
-        sh 'python3 --version'
+        sh 'python --version'
       }
     }
     stage('hello') {
       steps {
-        sh 'python3 HelloWorld.py'
+        sh 'python HelloWorld.py'
       }
     }
   }
