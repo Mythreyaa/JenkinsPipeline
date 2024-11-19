@@ -10,7 +10,8 @@ pipeline {
     stage('hello') {
       steps {
 	echo 'Stage Hello'
- 	bat'python HelloWorld.py'
+ 	bat'java Test.java'
+	bat'java Test'
       }
     }
   }
