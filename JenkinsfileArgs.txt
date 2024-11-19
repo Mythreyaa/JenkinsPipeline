@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                bat 'javac Addition.java'
+                bat 'javac Add.java'
             }
         }
         stage('Run') {
             steps {
-                bat "java Addition ${params.NUM1} ${params.NUM2}"
+                bat "java Add ${params.NUM1} ${params.NUM2}"
             }
         }
     }
