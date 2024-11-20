@@ -8,7 +8,7 @@ def main():
     try:
         num1 = float(sys.argv[1])
         num2 = float(sys.argv[2])
-        print(f"The sum is: {num1 + num2} -")
+        print(f"The product is: {num1 * num2} -")
     except ValueError:
         print("Error: Please provide valid numbers.")
 
